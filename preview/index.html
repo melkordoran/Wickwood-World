@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wickwood Atlas</title>
+<meta name="description" content="Browser atlas of the Wickwood world: a foggy lantern-lit forest. An approximation, not the native Active Worlds renderer.">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<canvas id="view" aria-label="3D view of Wickwood"></canvas>
+<div id="labels" aria-hidden="true"></div>
+<button id="panelToggle" type="button" aria-controls="panel" aria-expanded="true">Atlas</button>
+<aside id="panel">
+  <header>
+    <h1>Wickwood</h1>
+    <p class="sub">Atlas of a foggy, lantern-lit forest</p>
+  </header>
+  <p class="note"><strong>Browser approximation.</strong> Drawn here with Three.js from the published models, textures and terrain. The native Active Worlds client lights, fogs and streams the world its own way, so use this as a map rather than a native screenshot.</p>
+  <section>
+    <h2>View</h2>
+    <div class="seg" role="group" aria-label="View">
+      <button type="button" data-view="native" aria-pressed="true">Native fog</button>
+      <button type="button" data-view="clear" aria-pressed="false">Clear air</button>
+      <button type="button" data-view="map" aria-pressed="false">Map</button>
+    </div>
+    <p id="mapNote" class="hint" hidden>Map view brightens the night lighting so the land reads from above.</p>
+    <label class="row"><input type="checkbox" id="lights" checked> Lantern light</label>
+    <label class="row"><input type="checkbox" id="labelsToggle" checked> Place names</label>
+    <label class="row"><input type="checkbox" id="trails"> Trail overlay</label>
+    <label class="row range">Draw distance
+      <input type="range" id="draw" min="60" max="2600" step="10" value="170">
+      <output id="drawOut" for="draw">170 m</output>
+    </label>
+  </section>
+  <section>
+    <h2>Places</h2>
+    <ul id="places"></ul>
+  </section>
+  <section class="help">
+    <h2>Moving around</h2>
+    <p>Drag to look, right-drag to pan, scroll to zoom. <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> walk, <kbd>Shift</kbd> hurries, <kbd>R</kbd> and <kbd>F</kbd> rise and sink.</p>
+  </section>
+  <footer id="stats">Loading</footer>
+</aside>
+<div id="hud"><span id="coords"></span></div>
+<div id="status" role="status">Loading atlas data</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+[
+ {
+  "id": "glade",
+  "name": "Wickgate Glade",
+  "x": 0.0,
+  "z": -30.0,
+  "y": 26.06,
+  "yaw": 0.0,
+  "teleport": "3.00S 0.00W 2.61a 0",
+  "description": "The arrival clearing: a lantern tree, stone lanterns and the wayboard of signs to every place."
+ },
+ {
+  "id": "hollow",
+  "name": "Lanternwrights Hollow",
+  "x": -418.0,
+  "z": 358.0,
+  "y": 28.84,
+  "yaw": 301.6,
+  "teleport": "35.80N 41.80E 2.88a 302",
+  "description": "A hamlet of lantern makers: cottages with lit windows, a workshop, a well and racks of lanterns."
+ },
+ {
+  "id": "oak",
+  "name": "The Hollow Oak",
+  "x": -600.0,
+  "z": -470.0,
+  "y": 22.46,
+  "yaw": 233.1,
+  "teleport": "47.00S 60.00E 2.25a 233",
+  "description": "A giant oak whose trunk you can walk through, lanterns hung inside and a ring of glowcaps."
+ },
+ {
+  "id": "circle",
+  "name": "Candlestone Circle",
+  "x": -105.0,
+  "z": 893.0,
+  "y": 42.63,
+  "yaw": 52.4,
+  "teleport": "89.30N 10.50E 4.26a 52",
+  "description": "Nine standing stones and an altar, each with its own cluster of candles."
+ },
+ {
+  "id": "dell",
+  "name": "Glowmoss Dell",
+  "x": -1040.0,
+  "z": 22.0,
+  "y": 14.49,
+  "yaw": 212.8,
+  "teleport": "2.20N 104.00E 1.45a 213",
+  "description": "A sunken hollow of luminous moss, glowing mushrooms and drifting fireflies."
+ },
+ {
+  "id": "beacon",
+  "name": "Beacon Hill",
+  "x": 735.0,
+  "z": -577.0,
+  "y": 84.28,
+  "yaw": 318.6,
+  "teleport": "57.70S 73.50W 8.43a 319",
+  "description": "The forest's high point, crowned by a stepped beacon and a watch spire above the fog."
+ },
+ {
+  "id": "tarn",
+  "name": "Mirrormist Tarn",
+  "x": 447.25,
+  "z": 296.02,
+  "y": 1.7,
+  "yaw": 75.6,
+  "teleport": "29.60N 44.72W 0.17a 76",
+  "description": "A dark still lake with floating lanterns, a jetty, a boathouse and a lantern island."
+ }
+]

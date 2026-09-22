@@ -1,0 +1,6 @@
+# Local build products, frozen releases and local atlas sites
+build/
+site/
+releases/
+__pycache__/
+*.pyc

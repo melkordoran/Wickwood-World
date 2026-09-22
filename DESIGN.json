@@ -1,0 +1,477 @@
+{
+  "world": "Wickwood",
+  "brief": "A foggy, lantern-lit forest. P256, walking and flying, original generated assets only.",
+  "theme": "A fog-bound old forest where every trail is marked by hanging lanterns: a lantern-makers' hamlet, a misty tarn with floating lanterns, a hilltop beacon, a hollow giant oak, a ring of candle-lit standing stones and a dell of glowing moss.",
+  "seed": 2026092201,
+  "range": 256,
+  "widthMetres": 5120,
+  "capacity": 32,
+  "caretaker": 1,
+  "owner": 1,
+  "objectPath": "http://127.0.0.1:8080/wickwood/",
+  "coordinates": {
+    "axes": "AW native: +x is west, +z is north, +y is up; metres in design, centimetres in properties, tenths of degrees for rotations",
+    "yaw": "0/90/180/270 face north/west/south/east; model fronts face local +z",
+    "teleport": "N/S from z/10, W/E from x/10 (positive x is W), altitude a in 10 m units"
+  },
+  "terrain": {
+    "grid": 512,
+    "minCell": -256,
+    "spacingMetres": 10,
+    "waterLevelMetres": 0,
+    "base": 24,
+    "textures": {
+      "forest": 0,
+      "clearing": 1,
+      "rock": 2,
+      "shore": 3,
+      "dellmoss": 4
+    },
+    "features": [
+      {
+        "id": "beacon-hill",
+        "kind": "hill",
+        "x": 720,
+        "z": -560,
+        "height": 62,
+        "radius": 270
+      },
+      {
+        "id": "candle-rise",
+        "kind": "hill",
+        "x": -70,
+        "z": 920,
+        "height": 11,
+        "radius": 260
+      },
+      {
+        "id": "dell",
+        "kind": "hollow",
+        "x": -1080,
+        "z": -40,
+        "depth": 9,
+        "radius": 150
+      },
+      {
+        "id": "tarn",
+        "kind": "lake",
+        "x": 580,
+        "z": 330,
+        "radius": 118,
+        "depth": 4.5
+      }
+    ]
+  },
+  "places": [
+    {
+      "id": "glade",
+      "name": "Wickgate Glade",
+      "kind": "arrival",
+      "x": 0,
+      "z": 0,
+      "radius": 46,
+      "description": "The arrival clearing: a lantern tree, stone lanterns and the wayboard of signs to every place."
+    },
+    {
+      "id": "hollow",
+      "name": "Lanternwrights Hollow",
+      "kind": "hamlet",
+      "x": -470,
+      "z": 390,
+      "radius": 72,
+      "description": "A hamlet of lantern makers: cottages with lit windows, a workshop, a well and racks of lanterns."
+    },
+    {
+      "id": "tarn",
+      "name": "Mirrormist Tarn",
+      "kind": "tarn",
+      "x": 580,
+      "z": 330,
+      "radius": 118,
+      "description": "A dark still lake with floating lanterns, a jetty, a boathouse and a lantern island."
+    },
+    {
+      "id": "beacon",
+      "name": "Beacon Hill",
+      "kind": "beacon",
+      "x": 720,
+      "z": -560,
+      "radius": 28,
+      "description": "The forest's high point, crowned by a stepped beacon and a watch spire above the fog."
+    },
+    {
+      "id": "oak",
+      "name": "The Hollow Oak",
+      "kind": "oak",
+      "x": -640,
+      "z": -500,
+      "radius": 52,
+      "description": "A giant oak whose trunk you can walk through, lanterns hung inside and a ring of glowcaps."
+    },
+    {
+      "id": "circle",
+      "name": "Candlestone Circle",
+      "kind": "stones",
+      "x": -70,
+      "z": 920,
+      "radius": 34,
+      "description": "Nine standing stones and an altar, each with its own cluster of candles."
+    },
+    {
+      "id": "dell",
+      "name": "Glowmoss Dell",
+      "kind": "dell",
+      "x": -1080,
+      "z": -40,
+      "radius": 64,
+      "description": "A sunken hollow of luminous moss, glowing mushrooms and drifting fireflies."
+    }
+  ],
+  "routes": [
+    {
+      "id": "hollow-lane",
+      "name": "Hollow Lane",
+      "from": "glade",
+      "to": "hollow",
+      "points": [
+        [
+          -30,
+          34
+        ],
+        [
+          -110,
+          150
+        ],
+        [
+          -250,
+          240
+        ],
+        [
+          -380,
+          335
+        ],
+        [
+          -418,
+          358
+        ]
+      ]
+    },
+    {
+      "id": "mistwater-path",
+      "name": "Mistwater Path",
+      "from": "glade",
+      "to": "tarn",
+      "points": [
+        [
+          40,
+          18
+        ],
+        [
+          170,
+          80
+        ],
+        [
+          320,
+          190
+        ],
+        [
+          420,
+          268
+        ],
+        [
+          449,
+          290
+        ]
+      ]
+    },
+    {
+      "id": "beacon-climb",
+      "name": "Beacon Climb",
+      "from": "glade",
+      "to": "beacon",
+      "points": [
+        [
+          34,
+          -30
+        ],
+        [
+          200,
+          -170
+        ],
+        [
+          400,
+          -330
+        ],
+        [
+          540,
+          -400
+        ],
+        [
+          640,
+          -380
+        ],
+        [
+          860,
+          -430
+        ],
+        [
+          930,
+          -560
+        ],
+        [
+          880,
+          -720
+        ],
+        [
+          720,
+          -770
+        ],
+        [
+          570,
+          -690
+        ],
+        [
+          540,
+          -560
+        ],
+        [
+          600,
+          -470
+        ],
+        [
+          700,
+          -455
+        ],
+        [
+          770,
+          -500
+        ],
+        [
+          760,
+          -560
+        ],
+        [
+          735,
+          -577
+        ]
+      ]
+    },
+    {
+      "id": "rootwalk",
+      "name": "The Rootwalk",
+      "from": "glade",
+      "to": "oak",
+      "points": [
+        [
+          -34,
+          -30
+        ],
+        [
+          -190,
+          -160
+        ],
+        [
+          -400,
+          -330
+        ],
+        [
+          -560,
+          -445
+        ],
+        [
+          -600,
+          -470
+        ]
+      ]
+    },
+    {
+      "id": "candle-road",
+      "name": "Candle Road",
+      "from": "hollow",
+      "to": "circle",
+      "points": [
+        [
+          -452,
+          460
+        ],
+        [
+          -370,
+          600
+        ],
+        [
+          -230,
+          770
+        ],
+        [
+          -105,
+          893
+        ]
+      ]
+    },
+    {
+      "id": "shoreline-way",
+      "name": "Shoreline Way",
+      "from": "tarn",
+      "to": "circle",
+      "points": [
+        [
+          466,
+          314
+        ],
+        [
+          446,
+          400
+        ],
+        [
+          428,
+          520
+        ],
+        [
+          330,
+          660
+        ],
+        [
+          180,
+          800
+        ],
+        [
+          -36,
+          905
+        ]
+      ]
+    },
+    {
+      "id": "mosswalk",
+      "name": "The Mosswalk",
+      "from": "oak",
+      "to": "dell",
+      "points": [
+        [
+          -690,
+          -470
+        ],
+        [
+          -850,
+          -330
+        ],
+        [
+          -990,
+          -170
+        ],
+        [
+          -1052,
+          -100
+        ]
+      ]
+    },
+    {
+      "id": "firefly-run",
+      "name": "Firefly Run",
+      "from": "hollow",
+      "to": "dell",
+      "points": [
+        [
+          -540,
+          360
+        ],
+        [
+          -720,
+          260
+        ],
+        [
+          -920,
+          110
+        ],
+        [
+          -1040,
+          22
+        ]
+      ]
+    }
+  ],
+  "paths": {
+    "width": 3.2,
+    "segmentMetres": 10,
+    "gradeStepPercent": 2,
+    "maxGradePercent": 14,
+    "flattenMetres": 11,
+    "blendMetres": 30
+  },
+  "lanterns": {
+    "pathSpacingMetres": 20,
+    "pathOffsetMetres": 2.6,
+    "lightEvery": 2,
+    "light": "create light color=ffae52 brightness=0.7 radius=14",
+    "flickerLight": "create light color=ffa040 brightness=0.75 radius=14 fx=flicker"
+  },
+  "atmosphere": {
+    "fog": {
+      "enabled": true,
+      "tinted": true,
+      "color": [
+        44,
+        54,
+        56
+      ],
+      "minimum": 6,
+      "maximum": 135
+    },
+    "minimumVisibility": 130,
+    "sky": {
+      "top": [
+        14,
+        18,
+        26
+      ],
+      "horizon": [
+        44,
+        54,
+        56
+      ],
+      "bottom": [
+        28,
+        34,
+        36
+      ]
+    },
+    "ambient": [
+      74,
+      82,
+      90
+    ],
+    "moonlight": {
+      "color": [
+        84,
+        96,
+        126
+      ],
+      "direction": [
+        -0.35,
+        -0.9,
+        0.3
+      ]
+    },
+    "maxLightRadius": 40
+  },
+  "movement": {
+    "walking": true,
+    "flying": true,
+    "teleport": true,
+    "gravity": 1,
+    "friction": 1
+  },
+  "budget": {
+    "objects": 20000,
+    "trianglesPerTree": 450,
+    "cellBytes": 32768,
+    "uniqueModels": 90,
+    "downloadMegabytes": 6
+  },
+  "assets": "Every model, texture and avatar is generated by this pipeline from the seed. No core, UberPath or other external catalogue is referenced.",
+  "constraints": [
+    "Create only Wickwood; leave Sandbox, citizen records, universe defaults and networking unchanged.",
+    "Import through acknowledged native writes on a caretaker session; keep the world private until readback passes.",
+    "Normal walking on native terrain and solid model floors; flight and teleport enabled.",
+    "Distinguish measured protocol and asset checks from the browser atlas approximation and the pending native-client test."
+  ]
+}

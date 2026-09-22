@@ -1,0 +1,20 @@
+version 3
+
+avatar
+ name=Wickwood Lamplighter
+ geometry=wk_av_lamplighter.rwx
+ beginimp
+ endimp
+ beginexp
+ endexp
+endavatar
+
+avatar
+ name=Wickwood Wanderer
+ geometry=wk_av_wanderer.rwx
+ beginimp
+ endimp
+ beginexp
+ endexp
+endavatar
+

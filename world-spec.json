@@ -1,0 +1,14 @@
+{
+  "name": "Wickwood",
+  "range": 256,
+  "widthMetres": 5120,
+  "capacity": 32,
+  "caretaker": 1,
+  "tourists": true,
+  "comment": "Wickwood P256 foggy lantern-lit forest (generated, original assets)",
+  "attributeOverrides": {
+    "EnterRight": ""
+  },
+  "objectPath": "http://127.0.0.1:8080/wickwood/",
+  "notes": "Provisioned private (EnterRight empty) for the import. The full settings in the frozen release's world-attributes.json are applied afterwards with AxisAdmin set-attributes, and the world is opened with EnterRight=* only after readback verification."
+}

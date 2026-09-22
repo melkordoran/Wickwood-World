@@ -1,0 +1,11 @@
+# Generated and vendored files must stay byte-identical to their recorded SHA-256 hashes.
+generated/** -text
+releases/** -text
+preview/vendor/** -text
+*.rwx -text
+*.dat -text
+*.zip binary
+*.jpg binary
+*.sqlite binary
+*.i32le binary
+*.u16le binary

@@ -1,0 +1,48 @@
+{
+  "world": "Wickwood",
+  "preparedOn": "2026-09-22",
+  "scope": "Authored design, generator and QA pipeline, browser atlas frontend and a generated snapshot of original assets; no runtime state, deployment records or credentials.",
+  "sourceAdjustments": [
+    "Object path changed to loopback (http://127.0.0.1:8080/wickwood/) in DESIGN.json, world-spec.json and generated/world-attributes.json",
+    "Deployment acceptance report, frozen deployment releases and machine-specific paths and identifiers kept out of the export",
+    "Generated snapshot rebuilt from the adjusted design"
+  ],
+  "validation": {
+    "buildProblems": 0,
+    "snapshotComparedWithDeployedRelease": "20260922-003610",
+    "identicalFiles": 165,
+    "differingFiles": [
+      "world-attributes.json"
+    ],
+    "worldAttributesDifferences": [
+      "ObjectPath"
+    ],
+    "objects": 18524,
+    "uniqueModels": 66,
+    "textures": 18,
+    "avatars": 2,
+    "machineSpecificDetailsFound": 0,
+    "toolVersions": {
+      "python": "3.12.10",
+      "numpy": "2.5.3",
+      "pillow": "12.3.0"
+    },
+    "nativeClientAcceptanceRun": false,
+    "offlineSmokeTest": {
+      "status": "PASS",
+      "isolatedCopy": true,
+      "commands": [
+        "python pipeline/build.py --freeze",
+        "python pipeline/deploy_assets.py releases/<stamp> site/wickwood --manifest site/deploy-manifest.json",
+        "python pipeline/atlas_export.py releases/<stamp> build/atlas/data",
+        "python pipeline/deploy_atlas.py site/wickwood/preview site/atlas-manifest.json",
+        "python -m http.server 8000 --bind 127.0.0.1 --directory site"
+      ],
+      "rebuiltFilesIdenticalToSnapshot": 166,
+      "publishedAssetFiles": 156,
+      "atlasRenderedInBrowser": true,
+      "atlasConsoleErrors": 0,
+      "serverAccess": false
+    }
+  }
+}
