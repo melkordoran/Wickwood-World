@@ -9,7 +9,7 @@
   ],
   "validation": {
     "buildProblems": 0,
-    "snapshotComparedWithDeployedRelease": "20260922-003610",
+    "snapshotComparedWithDeployedRelease": "20260922-010756",
     "identicalFiles": 165,
     "differingFiles": [
       "world-attributes.json"
@@ -31,17 +31,16 @@
     "offlineSmokeTest": {
       "status": "PASS",
       "isolatedCopy": true,
-      "commands": [
-        "python pipeline/build.py --freeze",
-        "python pipeline/deploy_assets.py releases/<stamp> site/wickwood --manifest site/deploy-manifest.json",
-        "python pipeline/atlas_export.py releases/<stamp> build/atlas/data",
-        "python pipeline/deploy_atlas.py site/wickwood/preview site/atlas-manifest.json",
-        "python -m http.server 8000 --bind 127.0.0.1 --directory site"
-      ],
       "rebuiltFilesIdenticalToSnapshot": 166,
       "publishedAssetFiles": 156,
-      "atlasRenderedInBrowser": true,
-      "atlasConsoleErrors": 0,
+      "loopbackFetches": {
+        "wickwood/preview/": true,
+        "wickwood/preview/app.js": true,
+        "wickwood/preview/data/index.json": true,
+        "wickwood/models/wk_bench.zip": true,
+        "wickwood/textures/terrain0.jpg": true,
+        "wickwood/avatars/avatars.dat": true
+      },
       "serverAccess": false
     }
   }

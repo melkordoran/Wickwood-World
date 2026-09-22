@@ -289,12 +289,11 @@ def wayshrine(name):
     m = Mesh(name)
     m.box(0, -0.2, 0, 0.18, 1.7, 0.18, "darktimber")
     m.box(0, 1.5, 0, 0.6, 0.06, 0.5, "darktimber")
-    m.box(0, 1.56, -0.2, 0.6, 0.55, 0.06, "timber")
+    m.box(0, 1.56, -0.2, 0.56, 0.55, 0.06, "timber")  # ends tuck inside the side panels (no shared side faces)
     for dx in (-0.27, 0.27):
         m.box(dx, 1.56, 0.02, 0.06, 0.55, 0.42, "timber")
     hanging_lantern(m, 0, 2.08, 0.02, chain=0.08, scale=0.9)
-    m.box(0, 2.11, -0.1, 0.8, 0.06, 0.45, "shingle", yaw=0)
-    m.box(0, 2.11, 0.25, 0.8, 0.06, 0.4, "shingle")
+    m.box(0, 2.11, 0.0625, 0.8, 0.06, 0.775, "shingle")  # one board: two overlapping boards flickered
     return m
 
 
@@ -470,8 +469,8 @@ def workshop(name):
     m.box(0, 0.15, -hd + 1.0, 6.0, 0.9, 0.9, "timber")
     for k in range(5):
         hanging_lantern(m, -3 + k * 1.5, eave - 0.05, 0.3, chain=0.35 + 0.1 * (k % 2))
-    for k in range(6):
-        m.box(-3.5 + k * 1.4, 1.05, -hd + 0.9, 0.2, 0.28, 0.2, "lanternglass")
+    for k in range(6):  # display lanterns spaced along the 6 m workbench top (x -3.0 to 3.0)
+        m.box(-2.5 + k * 1.0, 1.05, -hd + 0.9, 0.2, 0.28, 0.2, "lanternglass")
     return m
 
 
@@ -487,10 +486,11 @@ def well(name):
     for x in (-1.0, 1.0):
         m.box(x, 0.9, 0, 0.16, 1.7, 0.16, "darktimber")
     m.box(0, 2.6, 0, 2.4, 0.14, 0.14, "darktimber")
-    m.box(0, 2.74, -0.45, 2.6, 0.08, 1.0, "shingle")
-    m.box(0, 2.74, 0.45, 2.6, 0.08, 1.0, "shingle")
+    m.box(0, 2.74, 0, 2.6, 0.08, 1.9, "shingle")  # one board: two overlapping halves flickered along the ridge
     hanging_lantern(m, 0.5, 2.6, 0, chain=0.2)
     m.cylinder(-0.3, 1.1, 0, 0.16, 0.25, "timber", n=8, r1=0.18)
+    # rope from the crossbeam to the bucket; its ends sit 2 cm inside the beam and the bucket's lid
+    m.tube((-0.3, 2.62, 0), (-0.3, 1.33, 0), 0.018, 0.018, "rope", n=6)
     return m
 
 
@@ -517,8 +517,8 @@ def bench(name):
 def lantern_rack(name):
     m = Mesh(name)
     for x in (-1.2, 1.2):
-        m.box(x, 0, 0, 0.12, 2.2, 0.12, "darktimber")
-    m.box(0, 2.1, 0, 2.6, 0.1, 0.12, "darktimber")
+        m.box(x, 0, 0, 0.12, 2.26, 0.12, "darktimber")  # posts cap 6 cm above the top bar
+    m.box(0, 2.1, 0, 2.6, 0.1, 0.1, "darktimber")  # 2 cm shallower than the posts, so no faces share a plane
     m.box(0, 1.2, 0, 2.6, 0.08, 0.1, "darktimber")
     for k in range(4):
         hanging_lantern(m, -0.9 + k * 0.6, 2.1, 0, chain=0.15 + 0.05 * (k % 2), scale=0.8)

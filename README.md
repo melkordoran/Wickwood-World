@@ -100,7 +100,7 @@ Then open `http://127.0.0.1:8000/wickwood/preview/`. The atlas redraws the publi
 | `pipeline/wk_terrain.py` | Heightfield, lake, hills and dell, trail profiles and flattened trail corridors, terrain textures |
 | `pipeline/wk_mesh.py`, `pipeline/wk_models.py` | Mesh builder and the model catalogue, exported as RWX in ZIP archives |
 | `pipeline/wk_layout.py` | Places, trails, lanterns, signs, forest and understory placement |
-| `pipeline/wk_qa.py` | Floating-part geometry check used by the build |
+| `pipeline/wk_qa.py` | Floating-part check used by the build, and a coplanar-overlap scan for flicker-prone faces |
 | `pipeline/rwx_reader.py` | Strict RWX reader that re-parses every exported and downloaded model |
 | `pipeline/build.py` | Runs the pipeline, validates, writes `BUILD.json`, and freezes releases |
 | `pipeline/deploy_assets.py` | Copies only models, textures and avatars from a frozen release to an object path |
@@ -127,6 +127,7 @@ Asset-only changes need no server change when a new release's `scene.json`, terr
 |---|---|
 | 2026-09-21 | First release. |
 | 2026-09-22 | The bench backrest floated 28 cm above the seat. Two back posts in line with the legs now join them. Placements, terrain and settings are unchanged. |
+| 2026-09-22 | Repairs found by the geometry checks: the well's bucket hangs on a rope under a single roof board, the workshop's display lanterns sit on the workbench, and flicker-prone overlapping faces were removed from the wayshrine and the lantern rack. Placements, terrain and settings are unchanged. |
 
 ## Notices
 

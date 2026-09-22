@@ -786,7 +786,7 @@
    ],
    "max": [
     1.3,
-    2.2,
+    2.26,
     0.11777945491468367
    ]
   },
@@ -805,7 +805,7 @@
   "inwardClosedParts": 0,
   "placements": 2,
   "readerTriangles": 800,
-  "zipSha256": "543b9ff60a0ef5a8e7cc3f011b61b7297186ce67dba31420268f35c0ecbc62c7"
+  "zipSha256": "f87419f8eb743886b26b7b4ea18ad317bca66de2a69b64a1139a921a6b0f65dc"
  },
  "wk_lantern_stone": {
   "name": "wk_lantern_stone",
@@ -1922,7 +1922,7 @@
  },
  "wk_wayshrine": {
   "name": "wk_wayshrine",
-  "triangles": 178,
+  "triangles": 166,
   "bounds": {
    "min": [
     -0.4,
@@ -1947,17 +1947,17 @@
    "shingle",
    "timber"
   ],
-  "rwxBytes": 24276,
-  "zipBytes": 2887,
-  "closedParts": 15,
+  "rwxBytes": 22768,
+  "zipBytes": 2774,
+  "closedParts": 14,
   "inwardClosedParts": 0,
   "placements": 18,
-  "readerTriangles": 178,
-  "zipSha256": "cd39e6e5e7654de55db4c6db378f6d89efec579406511bb93414e65c06074ffe"
+  "readerTriangles": 166,
+  "zipSha256": "42c650dadd705141a296f33ffd8b16e26fa9721a767b355290062c545d0d3221"
  },
  "wk_well": {
   "name": "wk_well",
-  "triangles": 336,
+  "triangles": 344,
   "bounds": {
    "min": [
     -1.3,
@@ -1980,18 +1980,19 @@
    "darktimber",
    "iron",
    "lanternglass",
+   "rope",
    "shingle",
    "stone",
    "timber",
    "water"
   ],
-  "rwxBytes": 44127,
-  "zipBytes": 4727,
+  "rwxBytes": 45042,
+  "zipBytes": 4865,
   "closedParts": 26,
   "inwardClosedParts": 0,
   "placements": 1,
-  "readerTriangles": 336,
-  "zipSha256": "0b19c109d6651765e79b73ead4c497a2ad1dbef678196b208c0ee848755302c5"
+  "readerTriangles": 344,
+  "zipSha256": "b4b0ebe38ca94c7299ed9a16835faa2ec0f951f694e9a42f24c03c08e9cfa7b1"
  },
  "wk_workshop": {
   "name": "wk_workshop",
@@ -2024,11 +2025,11 @@
    "window"
   ],
   "rwxBytes": 111320,
-  "zipBytes": 12205,
+  "zipBytes": 12184,
   "closedParts": 68,
   "inwardClosedParts": 0,
   "placements": 1,
   "readerTriangles": 806,
-  "zipSha256": "abf1cf40cb8efc84e44736c7a301299a6d8df4fbaca9cfa649d431e82a62c207"
+  "zipSha256": "96f30526eef3663b86bf92305e24efb6fd0d303b398902b0f4f8b5025f26a927"
  }
 }
